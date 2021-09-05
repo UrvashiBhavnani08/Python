@@ -1,0 +1,10 @@
+from tkinter import *
+top = Tk()
+mb = Menubutton(top,text = &quot;GfG&quot;)
+mb.menu = Menu(mb,tearoff = 0)
+cVar = IntVar()
+aVar = IntVar()
+mb.menu.add_chekbutton(label = "Contact",variable=cVar)
+mb.menu.add_checkbutton(label = "About",variable=aVar)
+mb.pack()
+top.mainloop()
